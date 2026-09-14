@@ -1,0 +1,9 @@
+.env
+backend/.env
+backend/.env.example
+automation/.env
+automation/.env.example
+logs/
+node_modules/
+**/node_modules/
+**/logs/

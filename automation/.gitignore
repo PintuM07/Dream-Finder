@@ -1,0 +1,4 @@
+# NEVER commit your credentials
+.env
+logs/
+node_modules/

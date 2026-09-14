@@ -1,0 +1,37 @@
+{
+  "name": "Pintu Mahato",
+  "email": "mahatopintu63@gmail.com",
+  "currentTitle": "Software Development Engineer",
+  "yearsOfExperience": "2",
+  "skills": [
+    "React",
+    "Node.js",
+    "JavaScript",
+    "Java",
+    "Docker",
+    "SQL",
+    "REST APIs",
+    "Git",
+    "PostgreSQL",
+    "CSS",
+    "HTML"
+  ],
+  "education": "B.tech",
+  "summary": "",
+  "preferredLocations": [
+    "kolkata",
+    "banglore",
+    "Hydrabad"
+  ],
+  "jobType": "FULLTIME",
+  "expectedSalary": "700000",
+  "linkedinUrl": "https://www.linkedin.com/in/pintu-mahato-software-developer/",
+  "githubUrl": "https://github.com/PintuM07",
+  "portfolioUrl": "https://github.com/PintuM07",
+  "phone": "9999999999",
+  "noticePeriod": "Immediate",
+  "resumeFilePath": "c:\\Users\\Mahat\\OneDrive\\Desktop\\New folder\\backend\\data\\resume.pdf",
+  "resumeText": "",
+  "setup": true,
+  "updatedAt": "2026-08-15T07:18:15.475Z"
+}

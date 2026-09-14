@@ -1,0 +1,18 @@
+{
+  "name": "job-agent-automation",
+  "version": "1.0.0",
+  "description": "Auto-applies to LinkedIn and Naukri jobs using Playwright + Gemini AI",
+  "main": "run-all.js",
+  "scripts": {
+    "start": "node run-all.js",
+    "linkedin": "node run-all.js --linkedin",
+    "naukri": "node run-all.js --naukri",
+    "schedule": "node run-all.js --schedule --interval=4",
+    "schedule:6h": "node run-all.js --schedule --interval=6",
+    "schedule:12h": "node run-all.js --schedule --interval=12"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "playwright": "^1.45.0"
+  }
+}
