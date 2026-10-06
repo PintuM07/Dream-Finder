@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import {
   LayoutDashboard, Search, Briefcase, User, KeyRound,
-  Zap, ChevronRight, Wifi, WifiOff
+  Zap, ChevronRight, Wifi, WifiOff, Sun, Moon
 } from 'lucide-react';
 
 const navItems = [
@@ -33,6 +33,17 @@ export default function Sidebar() {
 
   const status = getStatusInfo();
 
+  const [theme, setTheme] = useState(
+    () => document.documentElement.getAttribute('data-theme') || 'dark'
+  );
+
+  const toggleTheme = () => {
+    const next = theme === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch { /* ignore */ }
+    setTheme(next);
+  };
+
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
@@ -61,6 +72,10 @@ export default function Sidebar() {
       </nav>
 
       <div className="sidebar-footer">
+        <button className="theme-toggle" onClick={toggleTheme}>
+          {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
+          {theme === 'light' ? 'Dark mode' : 'Light mode'}
+        </button>
         <div className="api-status-badge">
           <div className={`status-dot ${status.dot}`} />
           <div>

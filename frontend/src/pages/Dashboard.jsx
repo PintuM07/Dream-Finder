@@ -111,7 +111,7 @@ export default function Dashboard() {
         }}>
           <AlertCircle size={16} />
           <span>
-            <strong>Gemini API key not configured.</strong> AI features (job matching, cover letters) won't work until you add it to <code style={{ background: 'rgba(0,0,0,0.2)', padding: '1px 6px', borderRadius: 4 }}>backend/.env</code>
+            <strong>Gemini API key not configured.</strong> AI features (job matching, cover letters) won't work until you add it to <code style={{ background: 'var(--bg-elevated)', padding: '1px 6px', borderRadius: 4 }}>backend/.env</code>
           </span>
         </div>
       )}
@@ -230,7 +230,7 @@ export default function Dashboard() {
                 gap: 14,
                 padding: '14px',
                 background: color,
-                border: '1px solid rgba(255,255,255,0.05)',
+                border: '1px solid var(--border-subtle)',
                 borderRadius: 'var(--radius-md)',
                 cursor: 'pointer',
                 transition: 'all 0.2s',
